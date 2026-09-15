@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Clipper</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <script src="/static/script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Video Clipper</h1>
+
+    <label for="url">Video URL</label>
+
+    <input
+        id="url"
+        type="url"
+        placeholder="Paste video URL"
+    >
+
+    <div class="time-container">
+
+        <div>
+
+            <label for="start">Start Time</label>
+
+            <input
+                id="start"
+                type="text"
+                inputmode="numeric"
+                placeholder="00:00:00"
+                maxlength="8"
+                oninput="formatTimestamp(this)"
+            >
+
+        </div>
+
+        <div>
+
+            <label for="end">End Time</label>
+
+            <input
+                id="end"
+                type="text"
+                inputmode="numeric"
+                placeholder="00:00:00"
+                maxlength="8"
+                oninput="formatTimestamp(this)"
+            >
+
+        </div>
+
+    </div>
+
+    <label for="quality">Quality</label>
+
+    <select id="quality">
+
+        <option value="best">
+            Best Available
+        </option>
+
+        <option value="1080">
+            Up to 1080p
+        </option>
+
+        <option value="720">
+            Up to 720p
+        </option>
+
+        <option value="480">
+            Up to 480p
+        </option>
+
+    </select>
+
+    <button
+        id="clipButton"
+        onclick="createClip()"
+    >
+        CREATE CLIP
+    </button>
+
+    <div id="status"></div>
+
+    <div id="videoContainer"></div>
+
+    <button
+        id="downloadButton"
+        class="download-button"
+        style="display: none;"
+        onclick="downloadClip()"
+    >
+        DOWNLOAD CLIP
+    </button>
+
+    <button
+        id="clearButton"
+        class="clear-button"
+        onclick="clearClips()"
+    >
+        CLEAR CLIPS FOLDER
+    </button>
+
+</div>
+</body>
+</html>
