@@ -221,4 +221,4 @@ The application does not bypass DRM or other access controls.
 
 ## 📄 License
 
-Add your chosen license here, such as MIT, if you decide to open-source the project.
+Standard MIT License
