@@ -1,22 +1,22 @@
-# 🎬 Video Clipper
+# Video Clipper
 
 A web-based video clipping tool that allows users to create clips from supported online videos by specifying a start and end timestamp.
 
 The project uses **FastAPI, yt-dlp, FFmpeg, HTML, CSS, and JavaScript**.
 
-## ✨ Features
+## Features
 
-* 📎 Paste a video URL
-* ⏱️ Select a specific start and end timestamp
-* 🎞️ Create clips without downloading the entire video first
-* 🎥 Preview the generated clip in the browser
-* ⬇️ Download the finished clip
-* 🖥️ Quality selection
-* 🧹 Clear generated clips from the clips folder
-* 🔊 Automatically handle separate video and audio streams
-* 🌐 Support for many sites compatible with yt-dlp
+*  Paste a video URL
+*  Select a specific start and end timestamp
+*  Create clips without downloading the entire video first
+*  Preview the generated clip in the browser
+*  Download the finished clip
+*  Quality selection
+*  Clear generated clips from the clips folder
+*  Automatically handle separate video and audio streams
+*  Support for many sites compatible with yt-dlp
 
-## 🌐 Supported Websites
+##  Supported Websites
 
 The application uses **yt-dlp** for media extraction, so it can work with many supported video platforms.
 
@@ -64,7 +64,7 @@ For the current list of yt-dlp extractors, see the official supported-sites list
 * Automatic captions
 * AI-generated clip titles
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 video-clipper/
@@ -90,7 +90,7 @@ video-clipper/
 * FastAPI
 * Uvicorn
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -123,7 +123,7 @@ Open:
 http://127.0.0.1:8000
 ```
 
-## 🎯 How to Use
+##  How to Use
 
 1. Paste a supported video URL.
 2. Enter the start timestamp.
@@ -154,7 +154,7 @@ means:
 1 minute and 30 seconds
 ```
 
-## 🤖 Future AI Features
+##  Future AI Features
 
 The long-term goal is to turn this from a basic timestamp clipper into an **AI-assisted clipping tool**.
 
@@ -182,7 +182,7 @@ Users could eventually enter prompts such as:
 
 The AI could return timestamp ranges and automatically create the clips.
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This project is intended for educational and personal use.
 
@@ -190,7 +190,7 @@ Users are responsible for ensuring that they have the necessary rights or permis
 
 The application does not bypass DRM or other access controls.
 
-## 📌 Project Status
+##  Project Status
 
 ### Current
 
@@ -219,6 +219,6 @@ The application does not bypass DRM or other access controls.
 * [ ] Automatic Shorts/Reels formatting
 * [ ] Cloud deployment
 
-## 📄 License
+##  License
 
 Standard MIT License
